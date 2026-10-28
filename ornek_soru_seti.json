@@ -1,0 +1,50 @@
+{
+  "konu": "for döngüsü ve range",
+  "seviye": "baslangic",
+  "sorular": [
+    {
+      "tur": "coktan_secmeli",
+      "soru": "range(5) hangi sayıları üretir?",
+      "secenekler": ["1, 2, 3, 4, 5", "0, 1, 2, 3, 4", "0, 1, 2, 3, 4, 5", "1, 2, 3, 4"],
+      "dogru_cevap": "0, 1, 2, 3, 4",
+      "aciklama": "range(5) 0'dan başlar ve 5'e kadar gider ama 5'i dahil etmez.",
+      "zorluk": "kolay"
+    },
+    {
+      "tur": "kod_ciktisi",
+      "soru": "Bu kod ekrana ne yazar?",
+      "kod": "toplam = 0\nfor i in range(1, 4):\n    toplam = toplam + i\nprint(toplam)",
+      "secenekler": ["10", "6", "3", "4"],
+      "dogru_cevap": "6",
+      "aciklama": "i sırayla 1, 2, 3 olur. 1 + 2 + 3 = 6.",
+      "zorluk": "kolay"
+    },
+    {
+      "tur": "kod_ciktisi",
+      "soru": "Bu kodun çıktısı nedir?",
+      "kod": "for i in range(0, 10, 3):\n    print(i)",
+      "secenekler": ["0\n3\n6\n9", "0\n3\n6", "3\n6\n9", "0\n3\n6\n9\n12"],
+      "dogru_cevap": "0\n3\n6\n9",
+      "aciklama": "range(0, 10, 3) 0'dan başlar, 3'er artar ve 10'dan önce durur: 0, 3, 6, 9.",
+      "zorluk": "orta"
+    },
+    {
+      "tur": "hata_bulma",
+      "soru": "Bu kod çalıştırılınca hangi satırda hata verir?",
+      "kod": "meyveler = [\"elma\", \"armut\", \"kiraz\"]\nsayac = 0\nfor meyve in meyveler:\n    print(meyve)\n    sayac = sayac + 1\nprint(\"Toplam meyve: \" + sayac)",
+      "secenekler": ["1", "3", "5", "6"],
+      "dogru_cevap": "6",
+      "aciklama": "Metin (str) ile sayı (int) + ile birleştirilemez. str(sayac) yazılmalıydı.",
+      "zorluk": "orta"
+    },
+    {
+      "tur": "hata_bulma",
+      "soru": "Bu kodda hangi satır hatalıdır?",
+      "kod": "isimler = [\"Ada\", \"Can\", \"Ece\"]\nfor i in range(4):\n    print(isimler[i])\nprint(\"Bitti\")",
+      "secenekler": ["1", "2", "3", "4"],
+      "dogru_cevap": "3",
+      "aciklama": "Listede 3 eleman var (0, 1, 2). i = 3 olduğunda isimler[3] IndexError verir. Hata 3. satırda oluşur; çözüm range(len(isimler)) kullanmaktır.",
+      "zorluk": "zor"
+    }
+  ]
+}
